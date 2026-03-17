@@ -155,10 +155,6 @@ a:hover { opacity: 0.8; }
   background: var(--accent-dim);
 }
 
-.hero-links a svg {
-  width: 16px;
-  height: 16px;
-}
 
 /* ---- Section ---- */
 .section {
@@ -655,11 +651,19 @@ a:hover { opacity: 0.8; }
   gap: 12px;
 }
 
-.fact-emoji {
-  font-size: 1.4rem;
+.fact-icon {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-dim);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  line-height: 1;
-  margin-top: 2px;
+  letter-spacing: 0.02em;
 }
 
 .fact-text {
