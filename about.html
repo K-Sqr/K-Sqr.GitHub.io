@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me — Emmanuel Adekoya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">Emmanuel A.</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html" class="active">About Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <div class="about-hero">
+      <h1>Off the Clock</h1>
+      <p>Code is what I do. Here's who I am.</p>
+    </div>
+
+    <!-- Quick-Fire Facts -->
+    <section class="section" style="border-top: none; padding-top: 0;">
+      <p class="section-label">Quick-Fire</p>
+      <h2 class="section-title">Random Facts</h2>
+
+      <div class="facts-grid">
+        <div class="fact-card">
+          <span class="fact-emoji">&#x1F423;</span>
+          <div class="fact-text"><strong>First job:</strong> McDonald's</div>
+        </div>
+        <div class="fact-card">
+          <span class="fact-emoji">&#x1F35B;</span>
+          <div class="fact-text"><strong>Favorite food:</strong> Jollof rice</div>
+        </div>
+        <div class="fact-card">
+          <span class="fact-emoji">&#x1F3B5;</span>
+          <div class="fact-text"><strong>On repeat:</strong> Cold Sunday in Brazil</div>
+        </div>
+        <div class="fact-card">
+          <span class="fact-emoji">&#x1F4FA;</span>
+          <div class="fact-text"><strong>Comfort show:</strong> Mob Psycho</div>
+        </div>
+        <div class="fact-card">
+          <span class="fact-emoji">&#x26BD;</span>
+          <div class="fact-text"><strong>Team:</strong> Real Madrid &middot; <strong>GOAT:</strong> Cristiano Ronaldo</div>
+        </div>
+        <div class="fact-card">
+          <span class="fact-emoji">&#x1F3BA;</span>
+          <div class="fact-text"><strong>Weird skill:</strong> I can make trumpet noises</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Dump -->
+    <section class="section">
+      <p class="section-label">Life in Photos</p>
+      <h2 class="section-title">Photo Dump</h2>
+
+      <div class="photo-grid">
+        <figure>
+          <img src="assets/baby_photo.jpg" alt="Baby Emmanuel" loading="lazy">
+          <figcaption>The origin story</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/family.JPG" alt="Family photo" loading="lazy">
+          <figcaption>Family</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gym_pic.jpg" alt="At the gym" loading="lazy">
+          <figcaption>Iron therapy</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/kid_pic.jpg" alt="Childhood photo" loading="lazy">
+          <figcaption>Mini me</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/lake_pic.jpg" alt="At the lake" loading="lazy">
+          <figcaption>Lake day</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Favorite Meme -->
+    <section class="section">
+      <p class="section-label">Bonus</p>
+      <h2 class="section-title">Favorite Video</h2>
+
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/u4WB0VgmE3o" title="Favorite video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="cta-box">
+        <p>If you made it this far, let's be friends.</p>
+        <a class="btn-primary" href="mailto:emmanueladecoder@gmail.com">Say Hi</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Emmanuel Adekoya</p>
+    </div>
+  </footer>
+
+</body>
+</html>

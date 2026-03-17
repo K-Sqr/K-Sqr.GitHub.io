@@ -1,76 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Emmanuel A. — Home</title>
-
-		<link rel="stylesheet" href="foundation-starter/css/foundation.min.css">
-		<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emmanuel Adekoya — Software Engineer</title>
+  <meta name="description" content="Software engineer building AI-powered products. B.S. Computer Science, University of St. Thomas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C8FTVMFRST"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C8FTVMFRST');
-</script>
 <body>
-	<header class="site-header">
-		<div class="container header-inner">
-			<a class="logo" href="index.html">Emmanuel A.</a>
-					<nav class="main-nav" aria-label="Main navigation">
-						<a href="index.html">Home</a>
-						<a href="projects.html">Projects</a>
-						<a href="resume.html">Resume</a>
-						<a href="fun.html">Fun</a>
-					</nav>
-		</div>
-	</header>
 
-	<main class="container">
-		<section class="hero">
-			<div class="hero-left">
-				<img src="assets/headshot.jpg" alt="Headshot of Emmanuel" class="headshot">
-			</div>
-			<div class="hero-right">
-				<h1>Hi, I'm Emmanuel</h1>
-				<p class="lead">
-					A Computer Science student at the University of St. Thomas (Class of 2025). I like math and problem solving.
-				</p>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">Emmanuel A.</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About Me</a>
+      </div>
+    </div>
+  </nav>
 
-				<ul class="quick-meta">
-					<li><strong>Available:</strong> Fall 2025 — internships & new grad roles</li>
-					<li><strong>Contact:</strong> emmanueladecoder@gmail.com</li>
-					<li><strong>GitHub:</strong> <a href="https://github.com/K-Sqr" target="_blank" rel="noopener">K-Sqr</a></li>
-				</ul>
+  <main class="container">
 
-				<p class="ctas">
-					<a class="btn" href="projects.html">See Projects</a>
-					<a class="btn ghost" href="resume.html">View Resume</a>
-				</p>
-			</div>
-		</section>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="assets/headshot.jpg" alt="Emmanuel Adekoya" class="hero-photo">
+      <div class="hero-content">
+        <h1 class="hero-name">Emmanuel Adekoya</h1>
+        <p class="hero-title">Software Engineer &middot; AI/ML</p>
+        <p class="hero-desc">
+          I build full-stack AI products that solve real problems. Currently focused on voice AI, NLP, and making complex systems accessible to everyone.
+        </p>
+        <div class="hero-links">
+          <a href="https://github.com/K-Sqr" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 17.07 3.633 16.7 3.633 16.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.694.825.576C20.565 21.795 24 17.295 24 12 24 5.37 18.63 0 12 0z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/emmanuel-koya/" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:emmanueladecoder@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a href="resume.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            Resume
+          </a>
+        </div>
+      </div>
+    </section>
 
-		<section class="goals" aria-labelledby="goals-heading">
-			<h2 id="goals-heading">Goals & What I Want</h2>
-			<p>I want to work in ML/AI product engineering or software engineering roles that blend research curiosity and real-world impact. I build efficient software and enjoy small teams where I can ship features and learn quickly.</p>
-		</section>
+    <!-- Featured Projects -->
+    <section class="section" id="projects">
+      <p class="section-label">Featured Work</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-desc">Here are a couple things I've built recently. <a href="projects.html">See all projects &rarr;</a></p>
 
-		<section class="skills" aria-labelledby="skills-heading">
-			<h2 id="skills-heading">Skills & Tools</h2>
-			<div class="chips">
-				<span>Pyhton</span> <span>Java</span><span>HTML/CSS</span><span>MIPS</span><span>Git/GitHub</span>
-			</div>
-		</section>
-	</main>
+      <div class="projects-grid">
 
-	<footer class="site-footer">
-		<div class="container footer-inner">
-			<p>© Emmanuel A. — University of St. Thomas · <a href="https://stthomas.edu" target="_blank" rel="noopener">stthomas.edu</a></p>
-		</div>
-	</footer>
+        <article class="project-card featured">
+          <div class="project-card-header">
+            <h3>BenefitFlow</h3>
+            <span class="project-badge">Live</span>
+          </div>
+          <p>
+            Multilingual voice AI assistant that screens SNAP food benefit eligibility through a 2-minute conversation. Replaces a 20-page government form with natural conversation in 28 languages.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>OpenAI API</span>
+            <span>Vapi AI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://benefitflow.me" target="_blank" rel="noopener">Live Site</a>
+            <a href="https://github.com/K-Sqr/benefitflow" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://youtu.be/4IEW2D9Mj5c" target="_blank" rel="noopener">Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-header">
+            <h3>Drug Usage Analytics Server</h3>
+          </div>
+          <p>
+            Server-rendered data visualization platform that transforms national substance use statistics into interactive Chart.js charts. Custom ETL pipeline and ESM template engine.
+          </p>
+          <div class="project-tags">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>Chart.js</span>
+            <span>CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/K-Sqr/web-dynamic-server" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <p class="section-label">Toolkit</p>
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <p>Python, JavaScript, TypeScript, Java, SQL</p>
+        </div>
+        <div class="skill-group">
+          <h3>AI / ML</h3>
+          <p>OpenAI API, Vapi Voice AI, NLP, Prompt Engineering, RAG</p>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <p>FastAPI, Node.js, Express, REST APIs</p>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <p>React, Next.js, Tailwind CSS, HTML/CSS</p>
+        </div>
+        <div class="skill-group">
+          <h3>DevOps</h3>
+          <p>Git, Linux, Vercel, Railway, Postman</p>
+        </div>
+        <div class="skill-group">
+          <h3>Data</h3>
+          <p>Chart.js, CSV/ETL Pipelines, R, RStudio</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <p class="section-label">Background</p>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="exp-list">
+        <div class="exp-item">
+          <h3>Web Developer (Volunteer)</h3>
+          <p class="exp-meta">Deeper Life Bible Church &middot; St. Paul, MN &middot; Sept 2024 &ndash; Present</p>
+          <ul>
+            <li>Developing a responsive church website to centralize event updates and member resources.</li>
+            <li>Collaborating with leadership to translate operational needs into technical features.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <h3>Web Designer</h3>
+          <p class="exp-meta">Glorem Missions &middot; St. Paul, MN &middot; Sept 2024 &ndash; March 2025</p>
+          <ul>
+            <li>Designed mobile-responsive pages to improve donor navigation and engagement.</li>
+            <li>Optimized page structure and accessibility across devices.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <h3>IT Student Lab Assistant</h3>
+          <p class="exp-meta">Century College &middot; White Bear Lake, MN &middot; Jan 2023 &ndash; Dec 2023</p>
+          <ul>
+            <li>Resolved 50+ weekly software and hardware issues for students and faculty.</li>
+            <li>Conducted audits for 1,000+ lab devices, improving tracking accuracy.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <p class="section-label">Education</p>
+      <h2 class="section-title">Education & Training</h2>
+
+      <div class="edu-card">
+        <h3>University of St. Thomas</h3>
+        <p class="edu-meta">B.S. Computer Science &middot; Dec 2025</p>
+        <p>Data Structures, Algorithms, OOP, Computational Linear Algebra, Computational Statistics, Information Security, Web Development, Computer Architecture</p>
+      </div>
+      <div class="edu-card">
+        <h3>CodePath Applied AI Engineering</h3>
+        <p class="edu-meta">In Progress &middot; 2026</p>
+        <p>Building AI-powered software using Anthropic's Claude Code in a curriculum co-developed with Anthropic engineers.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <p class="section-label">Get in touch</p>
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-row">
+        <a href="mailto:emmanueladecoder@gmail.com">emmanueladecoder@gmail.com</a>
+        <a href="tel:+16518907147">+1 (651) 890-7147</a>
+        <a href="https://github.com/K-Sqr" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/emmanuel-koya/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Emmanuel Adekoya</p>
+    </div>
+  </footer>
+
 </body>
 </html>

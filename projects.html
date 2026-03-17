@@ -1,82 +1,169 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Projects — Emmanuel Adekoya</title>
-	<link rel="stylesheet" href="foundation-starter/css/foundation.min.css">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Emmanuel Adekoya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C8FTVMFRST"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C8FTVMFRST');
-</script>
 <body>
-	<header class="site-header">
-		<div class="container header-inner">
-			<a class="logo" href="index.html">Emmanuel A.</a>
-			<nav class="main-nav">
-				<a href="index.html">Home</a>
-				<a href="projects.html">Projects</a>
-				<a href="resume.html">Resume</a>
-				<a href="fun.html">Fun</a>
-			</nav>
-		</div>
-	</header>
 
-	<main class="container">
-		<h1>Projects</h1>
-		<p>Selected highlights from coursework and personal projects.</p>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">Emmanuel A.</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-links">
+        <a href="projects.html" class="active">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About Me</a>
+      </div>
+    </div>
+  </nav>
 
-			<article class="project">
-				<h2>Finals Interpreter (Java)</h2>
-				<img src="assets/final_exam_interpreter.png" alt="Finals Interpreter screenshot" style="max-width:320px;border-radius:8px;display:block;margin:0.5rem 0">
-				<p class="caption">Screenshot from the Finals Interpreter GUI (student project).</p>
-				<p>GUI application built with Java Swing (JFrame). Helped students parse and analyze final exam schedules. Implemented parsing logic and interactive components for easier interpretation.</p>
-			</article>
+  <main class="container">
 
-			<article class="project">
-				<h2>Secret Santa App (Java)</h2>
-				<img src="assets/secret_santa_app.png" alt="Secret Santa app screenshot" style="max-width:320px;border-radius:8px;display:block;margin:0.5rem 0">
-				<p class="caption">App UI used for assigning gift pairs (student assignment).</p>
-				<p>Randomized gift exchange system implementing HashMap-based assignment to ensure unique gifter/receiver pairs. Focused on object-oriented design and robust randomization.</p>
-			</article>
+    <div class="page-header">
+      <h1>Projects</h1>
+      <p>From Java GUIs in my first CS classes to deploying full-stack AI products. Here's the journey.</p>
+    </div>
 
-			<article class="project">
-				<h2>Event-based Website (CodePath / Independent)</h2>
-				<img src="assets/Tech_conference_site.png" alt="Event site screenshot" style="max-width:320px;border-radius:8px;display:block;margin:0.5rem 0">
-				<p class="caption">Screenshot from the student-built tech conference site.</p>
-				<p>Built an event-driven website (front-end + simple back-end concepts) as part of CodePath Web Development. Highlights: schedule pages, event registration UI, and accessible navigation.</p>
-			</article>
+    <!-- Featured / Recent -->
+    <section class="section" style="border-top: none; padding-top: 0;">
+      <p class="section-label">2025 &ndash; Present</p>
+      <h2 class="section-title">Recent Work</h2>
 
-			<article class="project">
-			<h2>Glorem — WIX Site</h2>
-			<img src="assets/glrorem_site.png" alt="Glorem site screenshot" style="max-width:320px;border-radius:8px;display:block;margin:0.5rem 0">
-			<p class="caption">Homepage screenshot for Glorem (published site).</p>
-			<p>Designed and published a responsive website for the missionary organization Glorem using WIX. Focused on content layout and accessible navigation for donors and volunteers.</p>
-			<p><a href="https://www.glorem.org/" target="_blank" rel="noopener">Visit Glorem.org</a></p>
-		</article>
+      <div class="projects-grid">
 
-			<article class="project">
-			<h2>Religious Persecution Research (R)</h2>
-			<img src="assets/research_plot.png" alt="Research charts" style="max-width:320px;border-radius:8px;display:block;margin:0.5rem 0">
-			<p class="caption">Sample plot generated during analysis (student research).</p>
-			<p>Statistical analysis across 103 countries including two-sample proportion tests and visualizations in RStudio. Produced insights comparing persecution rates between continents.</p>
-			<p><a href="https://docs.google.com/document/u/0/d/1xrvALIfFZrKuxgziLUFbmbS0MNzrO1DildzUSzy7mKs/edit" target="_blank" rel="noopener">View research document (Google Doc)</a></p>
-		</article>
+        <article class="project-card featured">
+          <div class="project-card-header">
+            <h3>BenefitFlow</h3>
+            <span class="project-badge">Live</span>
+          </div>
+          <p>
+            Multilingual voice AI assistant that screens SNAP food benefit eligibility through a natural 2-minute conversation. Replaces a 20-page government form with voice interaction in 28 languages.
+          </p>
+          <p>
+            Engineered a FastAPI backend that retrieves call transcripts via Vapi API, extracts structured data using GPT-4o-mini with JSON-mode prompting, and sends personalized translated checklists via email. Frontend built with Next.js, TypeScript, and Tailwind CSS featuring a WebGL animated voice orb. Deployed on Vercel + Railway.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>OpenAI API</span>
+            <span>Vapi AI</span>
+            <span>Tailwind CSS</span>
+            <span>WebGL</span>
+            <span>Resend</span>
+          </div>
+          <div class="project-links">
+            <a href="https://benefitflow.me" target="_blank" rel="noopener">Live Site</a>
+            <a href="https://github.com/K-Sqr/benefitflow" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://youtu.be/4IEW2D9Mj5c" target="_blank" rel="noopener">Demo Video</a>
+          </div>
+        </article>
 
-	</main>
+        <article class="project-card">
+          <div class="project-card-header">
+            <h3>Drug Usage Analytics Server</h3>
+          </div>
+          <p>
+            Server-rendered data visualization platform that transforms national substance use statistics into interactive charts. Explore data across three dimensions: age group, drug type, and usage frequency.
+          </p>
+          <p>
+            Custom ETL pipeline parses raw CSV data, normalizes it into structured objects, and maps image assets at startup. Built a custom ESM template engine for server-side HTML generation with interactive Chart.js pie and bar charts. Dark glassmorphism UI with responsive design.
+          </p>
+          <div class="project-tags">
+            <span>Node.js</span>
+            <span>Express 5</span>
+            <span>Chart.js</span>
+            <span>Custom ETL</span>
+            <span>ESM Templates</span>
+            <span>CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/K-Sqr/web-dynamic-server" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
 
-	<footer class="site-footer">
-		<div class="container">
-			<small>© 2025 Emmanuel Adekoya</small>
-		</div>
-	</footer>
+      </div>
+    </section>
+
+    <!-- Earlier Work -->
+    <section class="section">
+      <p class="section-label">2023 &ndash; 2025</p>
+      <h2 class="section-title">Earlier Work</h2>
+      <p class="section-desc">Where it all started. Class projects and freelance work that built the foundation.</p>
+
+      <div class="earlier-grid">
+
+        <article class="earlier-card">
+          <h4>Tech Conference Site</h4>
+          <p class="year">CodePath Web Dev &middot; 2025</p>
+          <p>Event-driven website with schedule pages, registration UI, and accessible navigation. Built during CodePath's web development track.</p>
+          <div class="earlier-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="earlier-card">
+          <h4>Glorem Missions Website</h4>
+          <p class="year">Freelance &middot; 2024</p>
+          <p>Designed and published a responsive website for a missionary organization. Focused on content layout and donor navigation.</p>
+          <div class="earlier-tags">
+            <span>WIX</span>
+            <span>Web Design</span>
+          </div>
+        </article>
+
+        <article class="earlier-card">
+          <h4>Religious Persecution Research</h4>
+          <p class="year">Coursework &middot; 2024</p>
+          <p>Statistical analysis across 103 countries using two-sample proportion tests and data visualizations in RStudio.</p>
+          <div class="earlier-tags">
+            <span>R</span>
+            <span>RStudio</span>
+            <span>Statistics</span>
+          </div>
+        </article>
+
+        <article class="earlier-card">
+          <h4>Finals Interpreter</h4>
+          <p class="year">Coursework &middot; 2023</p>
+          <p>Java GUI app built with Swing that helps students parse and analyze final exam schedules. Implemented parsing logic and interactive components.</p>
+          <div class="earlier-tags">
+            <span>Java</span>
+            <span>Swing</span>
+            <span>OOP</span>
+          </div>
+        </article>
+
+        <article class="earlier-card">
+          <h4>Secret Santa App</h4>
+          <p class="year">Coursework &middot; 2023</p>
+          <p>Randomized gift exchange system using HashMap-based assignment to ensure unique gifter/receiver pairs. Focused on OOP design.</p>
+          <div class="earlier-tags">
+            <span>Java</span>
+            <span>HashMap</span>
+            <span>OOP</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Emmanuel Adekoya</p>
+    </div>
+  </footer>
+
 </body>
 </html>
