@@ -8,6 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google Analytics 4 — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
 </head>
 <body>
 
@@ -60,9 +68,9 @@
             <span>Resend</span>
           </div>
           <div class="project-links">
-            <a href="https://benefitflow.me" target="_blank" rel="noopener">Live Site</a>
-            <a href="https://github.com/K-Sqr/benefitflow" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://youtu.be/4IEW2D9Mj5c" target="_blank" rel="noopener">Demo Video</a>
+            <a href="https://benefitflow.me" target="_blank" rel="noopener" data-track="project_click" data-project="benefitflow" data-label="live_site">Live Site</a>
+            <a href="https://github.com/K-Sqr/benefitflow" target="_blank" rel="noopener" data-track="project_click" data-project="benefitflow" data-label="github">GitHub</a>
+            <a href="https://youtu.be/4IEW2D9Mj5c" target="_blank" rel="noopener" data-track="project_click" data-project="benefitflow" data-label="demo">Demo Video</a>
           </div>
         </article>
 
@@ -79,8 +87,8 @@
             <span>Vercel</span>
           </div>
           <div class="project-links">
-            <a href="https://deeper-life-church-online.vercel.app/" target="_blank" rel="noopener">Live Site</a>
-            <a href="https://github.com/K-Sqr/deeper-life-church" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://deeper-life-church-online.vercel.app/" target="_blank" rel="noopener" data-track="project_click" data-project="deeper-life-church" data-label="live_site">Live Site</a>
+            <a href="https://github.com/K-Sqr/deeper-life-church" target="_blank" rel="noopener" data-track="project_click" data-project="deeper-life-church" data-label="github">GitHub</a>
           </div>
         </article>
 
@@ -103,7 +111,7 @@
             <span>CSS</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/K-Sqr/web-dynamic-server" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/K-Sqr/web-dynamic-server" target="_blank" rel="noopener" data-track="project_click" data-project="drug-analytics" data-label="github">GitHub</a>
           </div>
         </article>
 
@@ -183,5 +191,6 @@
     </div>
   </footer>
 
+  <script src="js/analytics.js"></script>
 </body>
 </html>

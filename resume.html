@@ -8,6 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google Analytics 4 — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
 </head>
 <body>
 
@@ -29,7 +37,7 @@
       <h1>Resume</h1>
       <p>emmanueladecoder@gmail.com &middot; +1 (651) 890-7147 &middot; St. Paul, MN</p>
       <div class="resume-actions">
-        <a class="btn-primary" href="assets/EmmanuelAdekoya_Resume.pdf" download>&#8595; Download PDF</a>
+        <a class="btn-primary" href="assets/EmmanuelAdekoya_Resume.pdf" download data-track="resume_download" data-label="main_button">&#8595; Download PDF</a>
         <button class="btn-secondary" onclick="toggleView()">
           <span id="toggleLabel">Switch to Web View</span>
         </button>
@@ -41,7 +49,7 @@
       <div class="pdf-embed-wrapper">
         <iframe src="assets/EmmanuelAdekoya_Resume.pdf" title="Resume PDF"></iframe>
         <div class="pdf-fallback">
-          <p>PDF not loading? <a href="assets/EmmanuelAdekoya_Resume.pdf" download>Download it directly</a> or switch to the web view above.</p>
+          <p>PDF not loading? <a href="assets/EmmanuelAdekoya_Resume.pdf" download data-track="resume_download" data-label="fallback_link">Download it directly</a> or switch to the web view above.</p>
         </div>
       </div>
     </div>
@@ -146,6 +154,7 @@
     </div>
   </footer>
 
+  <script src="js/analytics.js"></script>
   <script>
     function toggleView() {
       const pdf = document.getElementById('pdfView');

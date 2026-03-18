@@ -9,6 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google Analytics 4 — replace GA_MEASUREMENT_ID with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
 </head>
 <body>
 
@@ -36,9 +44,9 @@
           I build full-stack AI products that solve real problems. Currently focused on voice AI, NLP, and making complex systems accessible to everyone.
         </p>
         <div class="hero-links">
-          <a href="https://github.com/K-Sqr" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/emmanuel-koya/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:emmanueladecoder@gmail.com">Email</a>
+          <a href="https://github.com/K-Sqr" target="_blank" rel="noopener" data-track="outbound_click" data-label="github" data-section="hero">GitHub</a>
+          <a href="https://www.linkedin.com/in/emmanuel-koya/" target="_blank" rel="noopener" data-track="outbound_click" data-label="linkedin" data-section="hero">LinkedIn</a>
+          <a href="mailto:emmanueladecoder@gmail.com" data-track="email_click" data-section="hero">Email</a>
           <a href="resume.html">Resume</a>
         </div>
       </div>
@@ -69,9 +77,9 @@
             <span>Vapi AI</span>
           </div>
           <div class="project-links">
-            <a href="https://benefitflow.me" target="_blank" rel="noopener">Live Site</a>
-            <a href="https://github.com/K-Sqr/benefitflow" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://youtu.be/4IEW2D9Mj5c" target="_blank" rel="noopener">Demo</a>
+            <a href="https://benefitflow.me" target="_blank" rel="noopener" data-track="project_click" data-project="benefitflow" data-label="live_site">Live Site</a>
+            <a href="https://github.com/K-Sqr/benefitflow" target="_blank" rel="noopener" data-track="project_click" data-project="benefitflow" data-label="github">GitHub</a>
+            <a href="https://youtu.be/4IEW2D9Mj5c" target="_blank" rel="noopener" data-track="project_click" data-project="benefitflow" data-label="demo">Demo</a>
           </div>
         </article>
 
@@ -89,7 +97,7 @@
             <span>CSS</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/K-Sqr/web-dynamic-server" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/K-Sqr/web-dynamic-server" target="_blank" rel="noopener" data-track="project_click" data-project="drug-analytics" data-label="github">GitHub</a>
           </div>
         </article>
 
@@ -143,8 +151,8 @@
             <li>Collaborating with leadership to translate operational needs into technical features.</li>
           </ul>
           <div class="project-links" style="margin-top: 12px;">
-            <a href="https://deeper-life-church-online.vercel.app/" target="_blank" rel="noopener">Live Site</a>
-            <a href="https://github.com/K-Sqr/deeper-life-church" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://deeper-life-church-online.vercel.app/" target="_blank" rel="noopener" data-track="project_click" data-project="deeper-life-church" data-label="live_site">Live Site</a>
+            <a href="https://github.com/K-Sqr/deeper-life-church" target="_blank" rel="noopener" data-track="project_click" data-project="deeper-life-church" data-label="github">GitHub</a>
           </div>
         </div>
         <div class="exp-item">
@@ -189,10 +197,10 @@
       <h2 class="section-title">Contact</h2>
 
       <div class="contact-row">
-        <a href="mailto:emmanueladecoder@gmail.com">emmanueladecoder@gmail.com</a>
+        <a href="mailto:emmanueladecoder@gmail.com" data-track="email_click" data-section="contact">emmanueladecoder@gmail.com</a>
         <a href="tel:+16518907147">+1 (651) 890-7147</a>
-        <a href="https://github.com/K-Sqr" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/emmanuel-koya/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/K-Sqr" target="_blank" rel="noopener" data-track="outbound_click" data-label="github" data-section="contact">GitHub</a>
+        <a href="https://www.linkedin.com/in/emmanuel-koya/" target="_blank" rel="noopener" data-track="outbound_click" data-label="linkedin" data-section="contact">LinkedIn</a>
       </div>
     </section>
 
@@ -204,5 +212,6 @@
     </div>
   </footer>
 
+  <script src="js/analytics.js"></script>
 </body>
 </html>
